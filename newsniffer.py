@@ -109,5 +109,5 @@ def upload_to_aws(local_file, bucket, s3_file):
         return False
 
 
-uploaded = upload_to_aws('IPlocation2.csv', 'Bucket_Name', 'IPLocation.csv')
-uploaded2 = upload_to_aws('New.pcap', 'Bucket_Name', 'ANMA.pcap')
+uploaded = upload_to_aws('IPlocation2.csv', 'network-security-new', 'IPLocation.csv')
+uploaded2 = upload_to_aws('New.pcap', 'network-security-new', 'ANMA.pcap')
