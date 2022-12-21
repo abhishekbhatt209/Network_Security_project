@@ -6,8 +6,8 @@ import boto3
 from botocore.exceptions import NoCredentialsError
 from datetime import datetime 
 
-ACCESS_KEY = 'AKIA2UPQL5Z43YQNHWDO'
-SECRET_KEY = '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'
+ACCESS_KEY = 'AKIAQY5JRXD2HCQSQXQO'
+SECRET_KEY = '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'
 
 
 # define interface
@@ -109,5 +109,5 @@ def upload_to_aws(local_file, bucket, s3_file):
         return False
 
 
-uploaded = upload_to_aws('IPlocation2.csv', 'network-security-new', 'IPLocation.csv')
-uploaded2 = upload_to_aws('New.pcap', 'network-security-new', 'ANMA.pcap')
+uploaded = upload_to_aws('IPlocation2.csv', 'nfsupros3', 'IPLocation.csv')
+uploaded2 = upload_to_aws('New.pcap', 'nfsupros3', 'ANMA.pcap')
