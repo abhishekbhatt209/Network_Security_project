@@ -6,8 +6,8 @@ import boto3
 from botocore.exceptions import NoCredentialsError
 from datetime import datetime 
 
-ACCESS_KEY = 'AKIAQY5JRXD2HCQSQO'
-SECRET_KEY = 'vVPflVW6j5jv+cPzSwCaUIVx7b8Iburok1BscI'
+ACCESS_KEY = 'AKIAT6D4NYZRGPPUTJOC'
+SECRET_KEY = '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'
 
 
 # define interface
@@ -19,7 +19,7 @@ writer = csv.DictWriter(f, fieldnames=fields)
 writer.writeheader()
 f.close()
 try:
-    networkInterface = "eth0"
+    networkInterface = "enX0"
 
 
     # define capture object
@@ -109,5 +109,5 @@ def upload_to_aws(local_file, bucket, s3_file):
         return False
 
 
-uploaded = upload_to_aws('IPlocation2.csv', 'nfpros3', 'IPLocation.csv')
-uploaded2 = upload_to_aws('New.pcap', 'nfpros3', 'ANMA.pcap')
+uploaded = upload_to_aws('IPlocation2.csv', 'network-romeel-security', 'IPLocation.csv')
+uploaded2 = upload_to_aws('New.pcap', 'network-romeel-security', 'ANMA.pcap')
