@@ -6,8 +6,8 @@ import boto3
 from botocore.exceptions import NoCredentialsError
 from datetime import datetime 
 
-ACCESS_KEY = 'xxxxxxx'
-SECRET_KEY = 'xxxxxxxxxxxxx'
+ACCESS_KEY = 'AKIAT6D4NYZRGPPUTJOC'
+SECRET_KEY = '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'
 
 
 # define interface
